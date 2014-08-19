@@ -43,3 +43,7 @@ gem 'factory_girl_rails'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
+
+group :prodction do
+  gem 'rails_12factor'
+end
