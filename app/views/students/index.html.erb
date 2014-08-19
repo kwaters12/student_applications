@@ -1,0 +1,32 @@
+<table>
+  <tr style="color: white; background: gray;">
+    <td span="2">Sorted by number of applications</td>
+  </tr>
+  <tr> 
+    <td>Student Name</td>
+    <td># of applications</td>
+  </tr>
+  <tr>
+  <% @student_applications.each do |student| %>
+    <tr>
+      <td><%= student.name %></td>
+      <td><%= student.applications.count%></td>
+    </tr>
+  <% end %>
+</table>
+<table>
+  <tr style="color: white; background: gray;">
+    <td span="2">Sorted by name</td>
+  </tr>
+  <tr> 
+    <td>Student Name</td>
+    <td># of applications</td>
+  </tr>
+  <tr>
+  <% @students.each do |student| %>
+  <tr>
+    <td><%= student.name %></td>
+    <td><%= student.applications.count %></td>
+  </tr>
+  <% end %>
+</table>

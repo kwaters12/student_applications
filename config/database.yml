@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: student_applications_development
+  username: kellywaters 
+  password: 
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: student_applications_test
+  pool: 5
+  username: kellywaters
+  password: 
